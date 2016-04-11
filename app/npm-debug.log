@@ -1,0 +1,60 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.9.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'http-server',
+1 verbose cli   '–g' ]
+2 info using npm@3.7.3
+3 info using node@v5.9.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData http-server
+8 silly fetchPackageMetaData –g
+9 silly fetchNamedPackageData http-server
+10 silly mapToRegistry name http-server
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/http-server
+14 silly fetchOtherPackageData –g
+15 silly cache add args [ '–g', null ]
+16 verbose cache add spec –g
+17 silly cache add parsed spec Result {
+17 silly cache add   raw: '–g',
+17 silly cache add   scope: null,
+17 silly cache add   name: null,
+17 silly cache add   rawSpec: '–g',
+17 silly cache add   spec: '/Users/pierrederamel/Desktop/Ex/angularjsbyexample-master/trainer/app/–g',
+17 silly cache add   type: 'local' }
+18 verbose request uri https://registry.npmjs.org/http-server
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 21:37:00
+21 verbose request id c43db91da59180cc
+22 http request GET https://registry.npmjs.org/http-server
+23 error addLocal Could not install /Users/pierrederamel/Desktop/Ex/angularjsbyexample-master/trainer/app/–g
+24 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Users/pierrederamel/Desktop/Ex/angularjsbyexample-master/trainer/app/–g'
+24 silly fetchPackageMetaData     at Error (native)
+24 silly fetchPackageMetaData  error for –g { [Error: ENOENT: no such file or directory, open '/Users/pierrederamel/Desktop/Ex/angularjsbyexample-master/trainer/app/–g']
+24 silly fetchPackageMetaData   errno: -2,
+24 silly fetchPackageMetaData   code: 'ENOENT',
+24 silly fetchPackageMetaData   syscall: 'open',
+24 silly fetchPackageMetaData   path: '/Users/pierrederamel/Desktop/Ex/angularjsbyexample-master/trainer/app/–g' }
+25 verbose stack TypeError: The header content contains invalid characters
+25 verbose stack     at ClientRequest.OutgoingMessage.setHeader (_http_outgoing.js:348:11)
+25 verbose stack     at new ClientRequest (_http_client.js:85:14)
+25 verbose stack     at Object.exports.request (http.js:31:10)
+25 verbose stack     at Object.exports.request (https.js:197:15)
+25 verbose stack     at Request.start (/usr/local/lib/node_modules/npm/node_modules/request/request.js:747:30)
+25 verbose stack     at Request.end (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1381:10)
+25 verbose stack     at end (/usr/local/lib/node_modules/npm/node_modules/request/request.js:575:14)
+25 verbose stack     at Immediate._onImmediate (/usr/local/lib/node_modules/npm/node_modules/request/request.js:589:7)
+25 verbose stack     at processImmediate [as _immediateCallback] (timers.js:516:17)
+26 verbose cwd /Users/pierrederamel/Desktop/Ex/angularjsbyexample-master/trainer/app
+27 error Darwin 15.2.0
+28 error argv "/usr/local/Cellar/node/5.9.0/bin/node" "/usr/local/bin/npm" "install" "http-server" "–g"
+29 error node v5.9.0
+30 error npm  v3.7.3
+31 error The header content contains invalid characters
+32 error If you need help, you may report this error at:
+32 error     <https://github.com/npm/npm/issues>
+33 verbose exit [ 1, true ]
